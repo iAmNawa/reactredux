@@ -9,7 +9,7 @@ class InputBox extends Component {
 
   onChange = (e) => {
     this.setState({ inputBox: e.target.value});
-    this.props.inputBoxChange(e.target.value)
+    this.props.inputBoxChange(e.target.value);
   }
 
   render() {
