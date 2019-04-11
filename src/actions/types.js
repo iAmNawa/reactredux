@@ -1,1 +1,2 @@
 export const INPUT_BOX_CHANGE = 'INPUT_BOX_CHANGE';
+export const INPUT_BOX_CHANGE_2 = 'INPUT_BOX_CHANGE_2';
