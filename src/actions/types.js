@@ -1,0 +1,1 @@
+export const INPUT_BOX_CHANGE = 'INPUT_BOX_CHANGE';
