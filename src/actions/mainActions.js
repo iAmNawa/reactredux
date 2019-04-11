@@ -8,9 +8,12 @@ export const inputBoxChange = (data) => {
   }
 }
 
-export const inputBoxChange2 = (data) => {
-  return {
-    type: INPUT_BOX_CHANGE_2,
-    payload: data
-  }
+export const inputBoxChange2 = (typicode) => dispatch => {
+  axios.get('https://jsonplaceholder.typicode.com/posts')
+    .then(res =>
+      dispatch({
+        type: INPUT_BOX_CHANGE_2,
+        payload: res.data[typicode].body
+      })
+    )
 }
