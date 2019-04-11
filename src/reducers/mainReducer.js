@@ -1,8 +1,7 @@
 import { INPUT_BOX_CHANGE } from '../actions/types';
 
 const initialState = {
-  one: 1,
-  two: 2,
+  input: '',
 }
 
 export default function(state = initialState, action) {
@@ -10,7 +9,7 @@ export default function(state = initialState, action) {
     case INPUT_BOX_CHANGE:
       return {
         ...state,
-        main: action.payload
+        input: action.payload
       }
     default:
       return state;
